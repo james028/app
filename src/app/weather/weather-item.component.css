@@ -1,0 +1,24 @@
+.icon {
+    width: 100px;
+    height: 50x; 
+}
+.icon img {
+    width: 100%;
+}
+.AnotherFeature {
+    margin: 30px auto 20px;
+}
+.AnotherTable {
+    display: flex;
+    justify-content: center;
+}
+.iconAndDesc {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+.bigCity {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

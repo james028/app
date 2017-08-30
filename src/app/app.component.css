@@ -1,0 +1,11 @@
+.head-art
+{
+    background: blue;
+    width: 100%;
+    height: 60px;
+}
+.head-art .header
+{
+    font-size: 36px;
+    color: #fff;
+}
