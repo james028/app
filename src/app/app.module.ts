@@ -4,21 +4,24 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { WeatherSearchComponent } from './weather/weather-search.component';
 import { WeatherItemComponent } from './weather/weather-item.component';
 
 import { WeatherService } from './weather/weather.service';
+import { WeatherLocationComponent } from './weather/weather-location.component';
+
+import { WeatherRouting } from './weather.routing';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WeatherSearchComponent,
-    WeatherItemComponent
+    WeatherItemComponent,
+    WeatherLocationComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    WeatherRouting
   ],
   providers: [
     WeatherService

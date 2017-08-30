@@ -18,37 +18,7 @@ export class WeatherItemComponent implements OnInit {
   constructor(private WService: WeatherService) {}
 
 
-  ngOnInit() {
-    //this.myWeather = this.WService.WeatherNow();
-    //navigator.geolocation.getCurrentPosition(pos => {
-        //this.location = pos.coords;
-
-        //console.log(this.location);
-
-        //const lat = this.location.latitude;
-        //const lon = this.location.longitude;
-
-        this.WService.locationWeather().subscribe(
-          data => {
-            console.log(data);
-            this.myWeather = new Weather(
-                  data.name,
-                  data.country,
-                  data.main.temp,
-                  data.weather[0].icon,
-                  data.weather[0].description,
-                  data.main.humidity,
-                  data.main.pressure,
-                  data.wind.speed,
-                  data.wind.deg,
-                  data.sys.sunrise,
-                  data.sys.sunset,
-                  data.clouds.all
-            )
-          }
-        );
-    //});
-  }
+  ngOnInit() {}
 
     onSubmit(weatherForm: NgForm) {
         console.log(NgForm);
@@ -64,15 +34,12 @@ export class WeatherItemComponent implements OnInit {
                         data.main.humidity,
                         data.main.pressure,
                         data.wind.speed,
-                        data.wind.deg,
-                        data.sys.sunrise,
-                        data.sys.sunset,
-                        data.clouds.all
-              
-            )
+                        data.main.temp_min,
+                        data.main.temp_max,
+                        data.clouds.all)
           }
         )
-        //this.weatherForm.value.city.patchValue(null);
+        //this..patchValue(null);
     }
-
 }
+ 

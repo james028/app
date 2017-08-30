@@ -3,14 +3,13 @@ export class Weather {
 		public cityName: string,
 		public country: string,
 		public img: string,
-		public temp: number,
+		public temp: string,
 		public description: string,
 		public humidity: string,
 		public pressure: string,
 		public wspeed: string,
-		public wdirection: string,
-		public sunrise: string,
-		public sunset: string,
+		public minTemp: string,
+		public maxTemp: string,
 		public cloud: string
 	) {}
 } 
